@@ -31,6 +31,8 @@ a:hover {
   color:red; }
 a:active {
   color:blue;}
+  .pg1 {  background:beige url("lobster.png")  no-repeat fixed right top;  }
+.pg2 {  background:lightgray url("lobster.png")  no-repeat scroll  right top;  width:10%; height:50px; }
   </style>
 <script>
 function event1onclick(){  document.getElementById("id_1").innerHTML
@@ -76,7 +78,7 @@ function event4onclick(){ document.getElementById("id_1").innerHTML
      </article></section>
   <section class="col-4 prof"><h4 id="chapter1"> 프로젝트 수행</h4>
     <article>
-     Portfolio 웹페이지 구조에 대한 설명 동영상입니다.
+     Portfolio 웹페이지 구조에 대한 계획 설명 동영상입니다.
     <br><br></article>
 <center>
   <iframe width="640" height="300" src="" frameborder="0" allow="accelerometer;
@@ -114,8 +116,24 @@ function event4onclick(){ document.getElementById("id_1").innerHTML
           <article>추가 예정입니다.</article>
 </section>
 </section>
+<form action="http://jsptogo.herokuapp.com/jspsrc/formSelect1.jsp" method="post">
+  <fieldset>
+    <legend>총평</legend>
+    <label for="timex">포트폴리오 잘 보셨나요?</label>
+    <select id="timex" name="mealtime">
+      <option value="네!">네!</option>
+      <option value="아니요!">아니요!</option>
+      <option value="잘 모르겠습니다">잘 모르겠습니다</option></select>
+    <label for="mealx">점수를 매겨주세요!</label>
+    <select id="mealx" name="meal">
+      <option value="1점">1점</option>
+      <option value="2점">2점</option>
+      <option value="3점">3점</option>
+      <option value="4점">4점</option>
+      <option value="5점">5점</option></select>
+    <button type="submit">등록</button></fieldset></form>
+  </section>
 
- <!-- /main-->
 <footer>
   <p>©2022 Made by korea.</p>
  </footer>
